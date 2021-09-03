@@ -1,5 +1,5 @@
 # sfsu-email-bot
-Sends a verification email to your SFSU email and gives you a role
+a discord bot that sends a verification email to your SFSU email and gives you a role
 
 # needs
 gmail account with app specific password (lines 52,53)<br><br>
