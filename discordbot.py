@@ -6,7 +6,7 @@ import random
 from discord.ext import commands
 import discord
 
-bot_token = ""
+bot_token = "" # <--- BOT TOKEN GOES HERE, enable PRESENCE INTENT and SERVER MEMBERS INTENT (bot should also have MANAGE ROLES perm)
 intents = discord.Intents.default()
 intents.members = True
 bot = commands.Bot(command_prefix='!',intents=intents)
