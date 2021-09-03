@@ -1,3 +1,5 @@
+<img src = "https://i.imgur.com/MXOPGq1.png">
+
 # sfsu-email-bot
 a discord bot that sends a verification email to your SFSU email and gives you a role
 
@@ -8,3 +10,5 @@ discord bot token (bot should have manage roles perms) (line 9)<br><br>
 discord role name (from server) (line 30)<br><br>
 discord server id (line 29)<br><br>
 you can change email subject line on line 59
+
+<img src = "https://i.imgur.com/5C3N3Rz.png">
