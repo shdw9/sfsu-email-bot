@@ -7,3 +7,4 @@ emails.txt file in same dir<br><br>
 discord bot token (bot should have manage roles perms) (line 9)<br><br>
 discord role name (from server) (line 30)<br><br>
 discord server id (line 29)<br><br>
+you can change email subject line on line 59
