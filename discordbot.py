@@ -27,7 +27,7 @@ async def register(ctx, arg):
 @bot.command()
 async def verify(ctx, arg1, arg2):
     server = bot.get_guild(883246479702114335) # <-- SERVER ID GOES HERE
-    role = discord.utils.get(server.roles, name="verified")
+    role = discord.utils.get(server.roles, name="verified") # <-- ROLE NAME GOES HERE
     member = server.get_member(ctx.message.author.id)
     #print(member)
     if int(arg2) in verificationcodes:
