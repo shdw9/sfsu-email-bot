@@ -26,7 +26,10 @@ async def register(ctx, arg):
 #
 @bot.command()
 async def verify(ctx, arg1, arg2):
-    server = bot.get_guild(883246479702114335) # <-- SERVER ID GOES HERE
+    if "@sfsu.edu" not in arg1:
+        await ctx.author.send('The email you provided does not end in @sfsu.edu ! :x:')
+        return
+    server = bot.get_guild(000000000000000000) # <-- SERVER ID GOES HERE
     role = discord.utils.get(server.roles, name="verified") # <-- ROLE NAME GOES HERE
     member = server.get_member(ctx.message.author.id)
     #print(member)
@@ -39,6 +42,7 @@ async def verify(ctx, arg1, arg2):
         verificationcodes.remove(int(arg2)) # REMOVES VERIFICATION CODE FROM ARRAY SO IT CAN'T BE USED MULTIPLE TIMES
     else:
         print("Verification code is NOT VALID!")
+        await ctx.author.send('Error! The verification code you provided is INVALID :white_check_mark: ')
 
 @bot.event
 async def on_ready():
